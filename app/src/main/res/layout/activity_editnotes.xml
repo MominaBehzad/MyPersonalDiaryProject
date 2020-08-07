@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".editnotes"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/date"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20dp"
+            android:layout_margin="@dimen/cardview_default_elevation"
+            android:background="@drawable/editstyle"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:drawableLeft="@drawable/ic_date"
+            android:elevation="10dp"
+            android:focusable="false"
+            android:hint="    ADD DATE"
+            android:onClick="datepicker" />
+
+        <EditText android:id="@+id/title"
+            android:drawableLeft="@drawable/ic_edit"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_margin="@dimen/cardview_default_elevation"
+            android:elevation="10dp"
+            android:background="@drawable/editstyle"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"
+            android:hint="    TITLE"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_margin="@dimen/cardview_default_elevation"
+        android:background="@drawable/editstyle"
+        android:layout_height="300dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="20dp"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:elevation="10dp"
+        android:hint="  Start Typing Here.."
+        android:inputType="textMultiLine"
+        android:scrollbars="vertical" />
+
+
+</LinearLayout>

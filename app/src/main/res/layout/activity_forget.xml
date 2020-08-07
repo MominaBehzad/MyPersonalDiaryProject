@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".forget"
+    android:padding="30dp">
+    <ImageView
+        android:id="@+id/logoforactivity3"
+        android:layout_marginTop="20dp"
+        android:layout_width="50dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/resetpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:layout_marginTop="100dp"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:text="@string/reset_your_password"
+        ></TextView>
+    <EditText
+        android:id="@+id/newusername"
+        android:drawableStart="@drawable/ic_email_black_24dp"
+        android:drawablePadding="8dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/hintt"
+        android:hint="@string/rabia_hasan_gmail_com"
+        android:maxLines="1"
+        android:layout_alignRight="@+id/hint"
+        android:singleLine="true"
+        android:textColor="#EFF4F7"
+        android:textColorHint="#C4EAF3EC"
+        android:layout_below="@id/resetpass"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/ic_email_black_24dp" />
+
+    <EditText
+        android:id="@+id/hintt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#EFF4F7"
+        android:maxLines="1"
+        android:textSize="20dp"
+        android:drawableStart="@drawable/ic_face_black_24dp"
+        android:drawablePadding="8dp"
+        android:singleLine="true"
+        android:hint="@string/your_secret_word"
+        android:textColorHint="#C4EAF3EC"
+        android:layout_below="@id/newusername"
+        android:drawableLeft="@drawable/ic_face_black_24dp"></EditText>
+    <CheckBox
+        android:id="@+id/c11"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/hintt"
+        android:text="Done"
+        android:enabled="false"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"></CheckBox>
+    <TextView
+        android:id="@+id/des"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/c11"
+        android:layout_marginTop="5dp"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        android:text="@string/password_is"
+        tools:ignore="HardcodedText" />
+    <TextView
+        android:id="@+id/passtextview"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/des"
+        android:layout_marginTop="15dp"
+        android:text=""
+        android:textStyle="bold"
+        android:textDirection="firstStrongLtr"
+        android:textSize="30dp"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+
+        />
+
+
+
+
+</RelativeLayout>

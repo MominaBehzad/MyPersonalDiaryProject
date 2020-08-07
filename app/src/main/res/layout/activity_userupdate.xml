@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:theme="@style/Theme.Design"
+    android:padding="30dp"
+    android:id="@+id/layout1"
+    tools:context=".userupdate">
+
+    <ImageView
+        android:id="@+id/logoforactivity2"
+        android:layout_marginTop="20dp"
+        android:layout_width="50dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo" />
+
+
+    <!--
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/texted1fullname"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/logoforactivity2"
+            app:errorEnabled="true"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ed1fullname"
+                android:drawableStart="@drawable/ic_person_black_24dp"
+                android:drawablePadding="8dp"
+                android:textSize="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/full_name"
+                android:textColor="#EFF4F7"
+                android:textColorHint="#C4EAF3EC"
+                android:drawableLeft="@drawable/ic_person_black_24dp">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        -->
+
+
+    <TextView
+        android:id="@+id/fullusername1"
+        android:drawableStart="@drawable/ic_person_black_24dp"
+        android:drawablePadding="8dp"
+        android:textSize="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#EFF4F7"
+        android:textColorHint="#C4EAF3EC"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:layout_below="@id/logoforactivity2"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/ic_person_black_24dp" />
+    <TextView
+        android:id="@+id/useremail1"
+        android:drawableStart="@drawable/ic_email_black_24dp"
+        android:drawablePadding="8dp"
+        android:textSize="25dp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#EFF4F7"
+        android:layout_below="@id/fullusername1"
+        android:layout_marginTop="5dp"
+        android:drawableLeft="@drawable/ic_email_black_24dp" />
+    <EditText
+        android:id="@+id/passss"
+        android:drawableStart="@drawable/ic_lock_black_24dp"
+        android:drawablePadding="8dp"
+        android:textSize="25dp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#EFF4F7"
+        android:inputType="textPassword"
+        android:hint="Old Password"
+        android:textColorHint="#C4EAF3EC"
+        android:layout_below="@id/useremail1"
+        android:layout_marginTop="0dp"
+        android:drawableLeft="@drawable/ic_lock_black_24dp" />
+
+    <EditText
+        android:id="@+id/confirmpassss"
+        android:drawableStart="@drawable/ic_lock_black_24dp"
+        android:drawablePadding="8dp"
+        android:textSize="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#EFF4F7"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:hint="New password"
+        android:textColorHint="#C4EAF3EC"
+        android:layout_below="@id/passss"
+        android:layout_marginTop="0dp"
+        android:drawableLeft="@drawable/ic_lock_black_24dp" />
+
+
+
+    <Button
+        android:id="@+id/tapme1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_below="@id/confirmpassss"
+        android:layout_marginTop="5dp"
+        android:text="Tap ME to proceed next"
+        android:layout_alignParentRight="true"
+        android:textAllCaps="false"
+        android:textSize="15dp"
+android:onClick="tapme1"
+        ></Button>
+
+
+
+</RelativeLayout>

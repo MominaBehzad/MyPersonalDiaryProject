@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/colorlayout"
+    android:orientation="vertical"
+    tools:context=".colors">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="STYLE AND COLOR"/>
+   <GridLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="50dp"
+       android:layout_marginLeft="30dp"
+       android:layout_marginRight="30dp"
+       android:background="@drawable/editstyle"
+       android:elevation="10dp"
+       android:rowCount="2"
+       android:columnCount="2">
+    <TextView
+        android:layout_width="wrap_content"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Theme"/>
+
+    <Button
+        android:id="@+id/theame"
+        android:layout_width="40dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_height="27dp"
+        android:onClick="oncolor"
+        android:background="@color/transparent"
+        android:drawableRight="@drawable/ic_theamecolor" />
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:textSize="20dp"
+           android:layout_height="wrap_content"
+           android:textColor="@color/black"
+           android:layout_marginTop="10dp"
+           android:layout_marginLeft="10dp"
+           android:text="Font Style"/>
+
+       <Button
+           android:id="@+id/fontstyle"
+           android:layout_width="40dp"
+           android:layout_gravity="right"
+           android:layout_marginTop="10dp"
+           android:layout_marginRight="30dp"
+           android:onClick="textstyle"
+           android:layout_height="27dp"
+           android:background="@color/transparent"
+           android:drawableRight="@drawable/ic_fontstyle" />
+       <TextView
+           android:layout_width="wrap_content"
+           android:textSize="20dp"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:layout_marginLeft="10dp"
+           android:textColor="@color/black"
+           android:text="Font Size"/>
+
+       <Button
+           android:id="@+id/fontsize"
+           android:layout_width="40dp"
+           android:layout_gravity="right"
+           android:layout_height="27dp"
+           android:layout_marginTop="10dp"
+           android:onClick="textsize"
+           android:layout_marginRight="30dp"
+           android:background="@color/transparent"
+           android:drawableRight="@drawable/ic_textsize" />
+       <TextView
+           android:layout_width="wrap_content"
+           android:textSize="20dp"
+           android:layout_marginTop="10dp"
+           android:layout_marginLeft="10dp"
+           android:layout_height="wrap_content"
+           android:textColor="@color/black"
+           android:text="Date Style"/>
+
+       <Button
+           android:id="@+id/datestyle"
+           android:layout_width="40dp"
+           android:layout_gravity="right"
+           android:layout_height="27dp"
+           android:background="@color/transparent"
+           android:onClick="datestyle"
+           android:layout_marginTop="10dp"
+           android:layout_marginRight="30dp"
+           android:drawableRight="@drawable/ic_datestyle" />
+   </GridLayout>
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="30dp"
+    android:layout_gravity="right"
+    android:onClick="save"
+    android:text="Save Changes"/>
+</LinearLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout"
+    android:padding="30dp"
+    tools:context=".login">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_marginTop="20dp"
+        android:layout_width="50dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo" />
+    <EditText
+        android:id="@+id/username"
+        android:drawableStart="@drawable/ic_email_black_24dp"
+        android:drawablePadding="8dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/rabia_hasan_gmail_com"
+        android:textColor="#EFF4F7"
+        android:textColorHint="#C4EAF3EC"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/ic_email_black_24dp" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:drawableStart="@drawable/ic_lock_black_24dp"
+        android:drawablePadding="8dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#EFF4F7"
+        android:inputType="textPassword"
+        android:hint="@string/abc_123"
+        android:textColorHint="#C4EAF3EC"
+        android:layout_below="@id/username"
+        android:layout_marginTop="0dp"
+        android:layout_alignLeft="@id/username"
+        android:drawableLeft="@drawable/ic_lock_black_24dp" />
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pass"
+        android:layout_marginTop="20dp"
+        android:text="sign in"
+        android:enabled="false"
+        android:textStyle="bold"
+        android:textDirection="firstStrongLtr"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#59EED5E0"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_button"
+        />
+    <TextView
+        android:id="@+id/donthaveaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/b1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        android:text="@string/don_t_have_an_account_create_now"/>
+    <TextView
+        android:id="@+id/forgetpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/donthaveaccount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        android:text="@string/forget_password"/>
+    <Button
+        android:id="@+id/b2facebook"
+        android:paddingLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/b1"
+        android:layout_marginTop="180dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_button"
+        android:drawableLeft="@drawable/adminicon"
+        android:backgroundTint="#59EED5E0"
+        android:drawablePadding="10dp"
+        android:paddingRight="10dp"
+        android:text="Sign in as an Admin"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textDirection="firstStrongLtr"
+        android:textSize="20dp"
+        android:textStyle="bold"></Button>
+
+
+</RelativeLayout>

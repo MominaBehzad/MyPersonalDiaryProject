@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <item
+        android:id="@+id/datestyle1"
+        android:title="MM-DD-YY" />
+
+    <item
+        android:id="@+id/datestyle2"
+        android:title="DD-MM-YY" />
+    <item
+        android:id="@+id/datestyle3"
+        android:title="YY-MM-DD" />
+
+</menu>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:theme="@style/Theme.Design"
+    android:padding="30dp"
+    android:id="@+id/layout1"
+    tools:context=".signin">
+
+    <ImageView
+        android:id="@+id/logoforactivity2"
+        android:layout_marginTop="20dp"
+        android:layout_width="50dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo" />
+
+
+    <!--
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/texted1fullname"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/logoforactivity2"
+            app:errorEnabled="true"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ed1fullname"
+                android:drawableStart="@drawable/ic_person_black_24dp"
+                android:drawablePadding="8dp"
+                android:textSize="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/full_name"
+                android:textColor="#EFF4F7"
+                android:textColorHint="#C4EAF3EC"
+                android:drawableLeft="@drawable/ic_person_black_24dp">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        -->
+
+
+    <EditText
+        android:id="@+id/fullusername"
+        android:drawableStart="@drawable/ic_person_black_24dp"
+        android:drawablePadding="8dp"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/full_name"
+        android:textColor="#EFF4F7"
+        android:textColorHint="#C4EAF3EC"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:layout_below="@id/logoforactivity2"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/ic_person_black_24dp" />
+    <EditText
+        android:id="@+id/useremail"
+        android:drawableStart="@drawable/ic_email_black_24dp"
+        android:drawablePadding="8dp"
+        android:textSize="20dp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textColor="#EFF4F7"
+        android:textColorHint="#C4EAF3EC"
+        android:layout_below="@id/fullusername"
+        android:layout_marginTop="5dp"
+        android:drawableLeft="@drawable/ic_email_black_24dp" />
+    <EditText
+        android:id="@+id/passs"
+        android:drawableStart="@drawable/ic_lock_black_24dp"
+        android:drawablePadding="8dp"
+        android:textSize="20dp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#EFF4F7"
+        android:inputType="textPassword"
+        android:hint="@string/password"
+        android:textColorHint="#C4EAF3EC"
+        android:layout_below="@id/useremail"
+        android:layout_marginTop="0dp"
+        android:drawableLeft="@drawable/ic_lock_black_24dp" />
+
+    <EditText
+        android:id="@+id/confirmpasss"
+        android:drawableStart="@drawable/ic_lock_black_24dp"
+        android:drawablePadding="8dp"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#EFF4F7"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:hint="@string/confirm_password"
+        android:textColorHint="#C4EAF3EC"
+        android:layout_below="@id/passs"
+        android:layout_marginTop="0dp"
+        android:drawableLeft="@drawable/ic_lock_black_24dp" />
+    <EditText
+        android:id="@+id/hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#EFF4F7"
+        android:maxLines="1"
+        android:textSize="20dp"
+        android:drawableStart="@drawable/ic_face_black_24dp"
+        android:drawablePadding="8dp"
+        android:singleLine="true"
+        android:hint="your secret word"
+        android:textColorHint="#C4EAF3EC"
+        android:layout_below="@id/confirmpasss"
+        android:drawableLeft="@drawable/ic_face_black_24dp"></EditText>
+
+
+    <Button
+        android:id="@+id/tapme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_below="@id/hint"
+        android:layout_marginTop="5dp"
+        android:text="Tap ME to proceed next"
+        android:enabled="false"
+        android:layout_alignParentRight="true"
+        android:textAllCaps="false"
+        android:textSize="15dp"
+
+        ></Button>
+    <CheckBox
+        android:id="@+id/c1"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/tapme"
+        android:text="I Agree"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        />
+    <TextView
+        android:id="@+id/desofNotification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/c1"
+        android:layout_alignBaseline="@id/c1"
+        android:layout_marginTop="14dp"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        android:visibility="invisible"
+        android:text="@string/desc_2activity" />
+
+    <Button
+        android:id="@+id/getstarted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/c1"
+        android:layout_marginTop="2dp"
+        android:text="@string/get_started"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        android:enabled="false"
+        android:textDirection="firstStrongLtr"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#59EED5E0"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_button"/>
+
+</RelativeLayout>

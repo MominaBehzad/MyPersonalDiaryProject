@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Dear Diary</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+
+    <string name="appname">DEAR DIARY</string>
+    <string name="quote">A collection of notes from your life.</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="log_in">LOG-IN</string>
+    <string name="rabia_hasan_gmail_com">rabia.hasan@gmail.com</string>
+    <string name="don_t_have_an_account_create_now">Don\'t have an account? sign up</string>
+    <string name="forget_password">forget password?</string>
+    <string name="full_name">Full Name</string>
+    <string name="password">password</string>
+    <string name="abc_123">abc#123</string>
+    <string name="confirm_password">confirm password</string>
+    <string name="get_started">Get Started</string>
+    <string name="reset_your_password">Reset Your Password</string>
+    <string name="desc_2activity">Do you allow personal diary app to send you notifications?</string>
+    <string name="reset">Reset</string>
+    <string name="congratulations_you_are_successfully_registered">CONGRATULATIONS! You are successfully </string>
+
+    <string name="your_secret_word">Your secret word</string>
+    <string name="password_is">Your Current password for the above entered username is:</string>
+</resources>
